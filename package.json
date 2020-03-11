@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch",
-    "test:coverage": "NODE_ENV=test jest --coverage"
+    "test:coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,8 @@
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-typescript": "^7.8.3",
     "babel-jest": "^25.1.0",
-    "jest": "^25.1.0"
+    "coveralls": "^3.0.7",
+    "jest": "^25.1.0",
+    "nyc": "^14.1.1"
   }
 }
