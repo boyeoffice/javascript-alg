@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch",
-    "test:coverage": "NODE_ENV=test jest --coverage && cat ./coverage/lcov.info"
+    "test:coverage": "NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
