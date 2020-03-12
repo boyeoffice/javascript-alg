@@ -11,6 +11,7 @@ module.exports = {
             },
           },
         ],
+        '@babel/preset-typescript'
       ],
     },
     // For Rollup, which requires ES6 modules to be left alone by Babel
