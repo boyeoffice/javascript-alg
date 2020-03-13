@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "cz": "git-cz",
+    "cz": "git add . && git-cz",
     "lint": "eslint prettier",
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch",
